@@ -1,7 +1,17 @@
+/* importaciones */
+@font-face {
+    font-family: 'simpsons';
+    src: url('/Simpsonfont\ DEMO.otf');
+}
+
+
+
+
 body{
     background-color: rgb(237, 243, 247);
     margin:0;
     padding:0;
+    font-family: 'simpsons';
 }
 
 
@@ -21,4 +31,8 @@ ul li{
 
 .logo_header{
     height: 100px;
+}
+
+.header_class{
+    background-color: rgba(168, 10, 70, 0.2345678);
 }
