@@ -53,8 +53,40 @@ ul li {
       color: rgb(3, 20, 101);
     }
 
-    @media (max-width:480px){
-        color:rgb(120, 44, 60);
+    @media (max-width: 480px) {
+      color: rgb(120, 44, 60);
     }
   }
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.dribbble.com/userupload/22148904/file/original-56b19720d83b146e748d69554e264aff.jpg?resize=752x&vertical=center")
+      no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: white;
+  /* centramos el contenido del hero (en este caso texto y boton) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    button{
+        border-radius: 10px;
+        border:solid 4px rgb(99, 101, 7);
+        box-shadow: 0 10px 20px rgba(70, 3, 33, 1 );
+        cursor:pointer;
+        color:aqua;
+        background-color: rgb(8, 15, 7);
+        &:hover{
+            background-color: rgb(20, 80, 40);
+        }
+        &:active{
+            background-color: rgb(30, 90, 60);
+        }
+    }
+
+
 }
