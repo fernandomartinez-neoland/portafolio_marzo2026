@@ -22,10 +22,11 @@ ul li {
 
 /* clases */
 .orientacion {
+    /* el "display:flex" nos permite acomodar horizontal o verticalmente los elementos hijos INMEDIATOS al elemento a la etiqueta a la que le asignemso la clase*/
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;/*centraliza horizontalmente los elementos*/
+  align-items: center;/*centraliza horizontalmente los elementos*/
+  gap: 20px;/* separa los elementos internos entre si colocando 20px entre cada elemento, el gap SOLO se puede usar con un "display"*/
 }
 
 .logo_header {
