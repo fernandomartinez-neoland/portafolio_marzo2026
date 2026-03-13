@@ -22,11 +22,17 @@ ul li {
 
 /* clases */
 .orientacion {
-    /* el "display:flex" nos permite acomodar horizontal o verticalmente los elementos hijos INMEDIATOS al elemento a la etiqueta a la que le asignemso la clase*/
+  /* el "display:flex" nos permite acomodar horizontal o verticalmente los elementos hijos INMEDIATOS al elemento a la etiqueta a la que le asignemso la clase*/
   display: flex;
-  justify-content: center;/*centraliza horizontalmente los elementos*/
-  align-items: center;/*centraliza horizontalmente los elementos*/
-  gap: 20px;/* separa los elementos internos entre si colocando 20px entre cada elemento, el gap SOLO se puede usar con un "display"*/
+  justify-content: center; /*centraliza horizontalmente los elementos*/
+  align-items: center; /*centraliza horizontalmente los elementos*/
+  gap: 20px; /* separa los elementos internos entre si colocando 20px entre cada elemento, el gap SOLO se puede usar con un "display"*/
+
+  /* con el "@media (){}" indicamos bajo que tamaño de pantalla que reglas se van a cumplir
+  en este caso indicamos que en una pantalla con un tamaño MAXIMO de 760px de ancho (osea que todas las pantallas por debajo de eso) van a adquirir los estilos que le estamos indicando, cualqueira que no cumpla con las condiciones no lo obtendran */
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
 }
 
 .logo_header {
@@ -43,8 +49,12 @@ ul li {
       color: rgb(140, 90, 1);
     }
     /* el hover representa la accion que se ejecutara cuadno posicionen el mouse encima del elemento */
-    &:hover{
-        color: rgb(3, 20, 101)
+    &:hover {
+      color: rgb(3, 20, 101);
+    }
+
+    @media (max-width:480px){
+        color:rgb(120, 44, 60);
     }
   }
 }
