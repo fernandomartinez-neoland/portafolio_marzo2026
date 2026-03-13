@@ -5,7 +5,7 @@
 }
 
 
-
+/* resetCss */
 
 body{
     background-color: rgb(237, 243, 247);
@@ -14,20 +14,22 @@ body{
     font-family: 'simpsons';
 }
 
-
-.centralizar{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-}
-
 ul li{
     list-style-type: none;
     a{
         text-decoration: none;
     }
 }
+
+
+/* clases */
+.orientacion{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
 
 .logo_header{
     height: 100px;
