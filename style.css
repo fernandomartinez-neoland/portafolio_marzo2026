@@ -37,9 +37,11 @@ ul li {
 
   a {
     color: rgb(140, 90, 1);
+    /* aqui con el after indicamos una regla que se ejecuta despues de su primer uso */
     &::after {
       color: rgb(140, 90, 1);
     }
+    /* el hover representa la accion que se ejecutara cuadno posicionen el mouse encima del elemento */
     &:hover{
         color: rgb(3, 20, 101)
     }
